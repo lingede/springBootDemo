@@ -1,0 +1,7 @@
+1.springBoot启动报错，“Your ApplicationContext is unlikely to start due to 
+a @ComponentScan of the default package”
+
+解决如下：查了半天终于才stack overflow上看到了解决方案，
+链接如下：
+http://stackoverflow.com/questions/35070455/springboot-beandefinitionstoreexception-failed-to-parse-configuration-class
+是因为application.java 文件不能直接放在main/java文件夹下，必须要建一个包把他放进去
